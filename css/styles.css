@@ -95,7 +95,12 @@ a { color: var(--ink); }
   border: 1px solid var(--ink);
   border-radius: 2px;
 }
-.btn:hover { background: #45423d; border-color: #45423d; }
+/* Primary button hover: a thin citron line along the bottom edge only. No fill change, no glow. */
+.btn:hover { box-shadow: inset 0 -3px 0 0 var(--citron); }
+
+/* Secondary outline button: same height and padding as the primary, transparent with an Ink border. */
+.btn-outline { background: transparent; color: var(--ink); border: 1px solid var(--ink); }
+.btn-outline:hover { box-shadow: inset 0 -3px 0 0 var(--citron); }
 
 /* Focus states you can actually see */
 a:focus-visible, .btn:focus-visible {
@@ -121,7 +126,7 @@ a:focus-visible, .btn:focus-visible {
 
 /* Button inverts on dark sections so it stays visible. Same shape, flipped colors. */
 .bg-ink .btn, .bg-stone .btn { background: var(--porcelain); color: var(--ink); border-color: var(--porcelain); }
-.bg-ink .btn:hover, .bg-stone .btn:hover { background: #ffffff; }
+.bg-ink .btn:hover, .bg-stone .btn:hover { box-shadow: inset 0 -3px 0 0 var(--citron); }
 .bg-ink .textlink { color: var(--porcelain); border-bottom-color: var(--citron); }
 
 /* ---- Asymmetric two-column blocks ---- */
@@ -162,10 +167,14 @@ a:focus-visible, .btn:focus-visible {
   display: grid;
   grid-template-columns: 1fr 2fr;   /* asymmetric: label beside body */
   gap: clamp(1rem, 3vw, 2.5rem);
-  padding: 1.8rem 0;
-  border-top: 1px solid rgba(41, 40, 38, 0.16);
+  background: var(--blush);
+  border: 1px solid var(--stone);
+  border-radius: 2px;
+  padding: clamp(1.5rem, 3vw, 2.2rem);
+  transition: transform 0.25s ease;   /* smooth, not bouncy */
 }
-.entry:last-child { border-bottom: 1px solid rgba(41, 40, 38, 0.16); }
+.entry + .entry { margin-top: 1rem; }
+.entry:hover { transform: scale(1.02); }
 .entry .label { font-size: 0.75rem; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: var(--stone); }
 .entry h3 { margin: 0.3rem 0 0.6rem; }
 .entry p { margin: 0; color: #4b463f; }
