@@ -180,6 +180,22 @@ a { color: var(--ink); }
 .kit-form .formkit-powered-by-convertkit,
 .kit-form .formkit-powered-by,
 .kit-form [data-element="powered-by"] { display: none !important; }
+/* After-subscribe confirmation message, restyled from Kit's green default */
+.kit-form .formkit-alert,
+.kit-form .formkit-alert-success {
+  background: var(--porcelain) !important;
+  border: 1px solid var(--stone) !important;
+  border-radius: 0 !important;
+  color: var(--ink) !important;
+  font-family: var(--sans) !important;
+  padding: 0.9rem 1.1rem !important;
+  box-shadow: none !important;
+}
+.kit-form .formkit-alert *,
+.kit-form .formkit-alert-success * {
+  color: var(--ink) !important;
+  font-family: var(--sans) !important;
+}
 
 /* =========================================================
    Speaking inquiry form (Formspree)
