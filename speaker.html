@@ -189,9 +189,42 @@
       <h2 style="max-width:26rem;">Bring Lauren into the conversation.</h2>
       <p style="margin-top:1rem;">Lauren is available for keynotes, author talks, podcasts, fireside conversations, workshops, panels, retreats, corporate events, and facilitated leadership sessions.</p>
       <p>Every engagement begins with a conversation about the audience, what they are experiencing, and what would be genuinely valuable to them.</p>
-      <div class="actions">
-        <a class="btn-list" href="mailto:info@newmindsetfoundation.com?subject=Speaking%20Inquiry">Inquire about an event</a>
-      </div>
+      <form class="inquiry-form" action="https://formspree.io/f/xnpaagjg" method="POST">
+        <input type="hidden" name="_subject" value="Speaking Inquiry">
+        <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <div class="form-row">
+          <div class="field">
+            <label for="f-name">Name</label>
+            <input id="f-name" type="text" name="name" required>
+          </div>
+          <div class="field">
+            <label for="f-email">Email</label>
+            <input id="f-email" type="email" name="email" required>
+          </div>
+        </div>
+        <div class="field">
+          <label for="f-org">Organization</label>
+          <input id="f-org" type="text" name="organization">
+        </div>
+        <div class="form-row">
+          <div class="field">
+            <label for="f-date">Event date</label>
+            <input id="f-date" type="text" name="event_date" placeholder="If known">
+          </div>
+          <div class="field">
+            <label for="f-type">What kind of event?</label>
+            <input id="f-type" type="text" name="event_type" placeholder="Conference, retreat, workshop, podcast">
+          </div>
+        </div>
+        <div class="field">
+          <label for="f-message">Message</label>
+          <textarea id="f-message" name="message" rows="5" required></textarea>
+        </div>
+        <div class="actions">
+          <button class="btn-list" type="submit">Send inquiry</button>
+        </div>
+        <p class="form-error" hidden>Something went wrong. You can email Lauren directly at <a href="mailto:info@newmindsetfoundation.com">info@newmindsetfoundation.com</a>.</p>
+      </form>
     </div>
   </section>
 
@@ -217,6 +250,36 @@
       </div>
     </div>
   </footer>
+
+  <!-- Submit the speaking inquiry in the background so the visitor stays on the page.
+       If JavaScript is off, the form still posts normally to Formspree. -->
+  <script>
+    (function () {
+      var form = document.querySelector('.inquiry-form');
+      if (!form) return;
+      var errorLine = form.querySelector('.form-error');
+      form.addEventListener('submit', function (event) {
+        event.preventDefault();
+        if (errorLine) errorLine.hidden = true;
+        fetch(form.action, {
+          method: 'POST',
+          body: new FormData(form),
+          headers: { 'Accept': 'application/json' }
+        }).then(function (response) {
+          if (response.ok) {
+            var thanks = document.createElement('p');
+            thanks.className = 'form-thanks';
+            thanks.textContent = "Thank you. Your note is on its way to Lauren, and you'll hear back within two business days.";
+            form.replaceWith(thanks);
+          } else if (errorLine) {
+            errorLine.hidden = false;
+          }
+        }).catch(function () {
+          if (errorLine) errorLine.hidden = false;
+        });
+      });
+    })();
+  </script>
 
 </body>
 </html>
