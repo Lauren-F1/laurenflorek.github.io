@@ -119,6 +119,68 @@ a { color: var(--ink); }
 .btn-list:hover { text-decoration: underline; text-underline-offset: 3px; }
 .btn-list:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; }
 
+/* =========================================================
+   Kit (email signup) form, restyled to match the site.
+   Kit ships its own inline styles, so these use !important
+   where needed to override them. Works in the Soft Stone
+   footer (home) and the blush section (book page).
+   ========================================================= */
+.kit-form { margin-top: 1.6rem; max-width: 30rem; }
+/* Montserrat everywhere, and strip Kit's own card chrome */
+.kit-form .formkit-form,
+.kit-form .formkit-form * { font-family: var(--sans) !important; }
+.kit-form .formkit-form {
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  max-width: 100% !important;
+}
+/* Email input: Warm Paper fill, thin Ink border, square corners */
+.kit-form .formkit-input {
+  background: var(--paper) !important;
+  border: 1px solid var(--ink) !important;
+  border-radius: 0 !important;
+  color: var(--ink) !important;
+  padding: 0.85rem 1rem !important;
+  font-size: 1rem !important;
+  box-shadow: none !important;
+}
+.kit-form .formkit-input::placeholder { color: #837a6e !important; opacity: 1; }
+/* Submit button: Ink background, Electric Citron lettering (citron on Ink is the approved treatment), square, no shadow */
+.kit-form .formkit-submit {
+  background: var(--ink) !important;
+  border: 1px solid var(--ink) !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  padding: 0.9rem 2rem !important;
+}
+.kit-form .formkit-submit,
+.kit-form .formkit-submit span {
+  color: var(--citron) !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.12em !important;
+  text-transform: uppercase !important;
+  font-size: 1rem !important;
+}
+.kit-form .formkit-submit:hover { background: #45423d !important; border-color: #45423d !important; }
+.kit-form .formkit-submit:hover span { text-decoration: underline; text-underline-offset: 3px; }
+.kit-form .formkit-submit > div { background: transparent !important; }  /* neutralize Kit's hover fill animation */
+/* Small privacy line under the form, in Soft Stone */
+.kit-form .formkit-guarantee,
+.kit-form .formkit-guarantee * {
+  color: var(--stone) !important;
+  font-size: 0.78rem !important;
+  font-weight: 400 !important;
+}
+/* On the Soft Stone footer, darken that line so it stays readable against the stone background */
+.site-footer--stone .kit-form .formkit-guarantee,
+.site-footer--stone .kit-form .formkit-guarantee * { color: #3a3833 !important; }
+/* Remove Kit branding */
+.kit-form .formkit-powered-by-convertkit,
+.kit-form .formkit-powered-by,
+.kit-form [data-element="powered-by"] { display: none !important; }
+
 /* Focus states you can actually see */
 a:focus-visible, .btn:focus-visible {
   outline: 2px solid var(--ink);
