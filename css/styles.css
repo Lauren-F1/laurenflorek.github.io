@@ -102,6 +102,23 @@ a { color: var(--ink); }
 .btn-outline { background: transparent; color: var(--ink); border: 1px solid var(--ink); }
 .btn-outline:hover { box-shadow: inset 0 -3px 0 0 var(--citron); }
 
+/* Bold action button: Ink background with Electric Citron lettering (citron on dark is allowed). Used for the mailing list and the book waitlist. */
+.btn-list {
+  display: inline-block;
+  font-family: var(--sans);
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--citron);
+  background: var(--ink);
+  padding: 1rem 2rem;
+  border-radius: 2px;
+}
+.btn-list:hover { text-decoration: underline; text-underline-offset: 3px; }
+.btn-list:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; }
+
 /* Focus states you can actually see */
 a:focus-visible, .btn:focus-visible {
   outline: 2px solid var(--ink);
@@ -272,6 +289,9 @@ a:focus-visible, .btn:focus-visible {
   max-width: 34rem;
 }
 
+/* Small imprint credit line at the end of the book description */
+.imprint { font-size: 0.85rem; color: #837a6e; margin-top: 2.2rem; }
+
 /* ---- Header ---- */
 .site-header {
   position: sticky;
@@ -335,22 +355,8 @@ a:focus-visible, .btn:focus-visible {
 .site-footer--stone .footer-contact a:hover { border-bottom-color: var(--ink); }
 .site-footer--stone .footer-bottom { color: var(--ink); border-top-color: rgba(41, 40, 38, 0.28); }
 
-/* Newsletter button: Ink background with Electric Citron lettering (citron on dark is allowed). */
-.site-footer--stone .btn-list {
-  display: inline-block;
-  font-family: var(--sans);
-  font-weight: 700;
-  font-size: 1rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: var(--citron);
-  background: var(--ink);
-  padding: 1rem 2rem;
-  border-radius: 2px;
-}
-.site-footer--stone .btn-list:hover { text-decoration: underline; text-underline-offset: 3px; }
-.site-footer--stone .btn-list:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; }
+/* In the Soft Stone footer, keep the citron lettering so it beats the general footer link color. */
+.site-footer--stone .btn-list { color: var(--citron); }
 
 /* =========================================================
    Phone first: stack the columns on narrow screens
