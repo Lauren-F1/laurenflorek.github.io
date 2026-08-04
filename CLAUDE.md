@@ -22,6 +22,7 @@ Lauren is not a developer. Explain everything in plain English, assume no coding
 2. Everything must read as human-made, never AI-generated. Banned words: unlock, elevate, empower, journey, transformative, seamless, dive in, in today's world.
 3. No emoji, anywhere.
 4. Voice: warm, direct, honest, a little wry. Like a person, not a landing page.
+5. Avoid compressed parallel headline constructions (patterns like 'Four talks, one body of work' or 'Less noise, more truth'). They read as AI-written. Plain or working headlines instead.
 
 ## Design rules
 
