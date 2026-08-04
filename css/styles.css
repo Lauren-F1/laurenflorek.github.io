@@ -304,6 +304,10 @@ a:focus-visible, .btn:focus-visible {
 /* Small imprint credit line at the end of the book description */
 .imprint { font-size: 0.85rem; color: #837a6e; margin-top: 2.2rem; }
 
+/* Thin vertical citron line in the left margin of the book description. Sits beside the text, never behind it. */
+.about-body { border-left: 3px solid var(--citron); padding-left: clamp(1.75rem, 4vw, 2.75rem); }
+@media (max-width: 640px) { .about-body { border-left: 0; } }
+
 /* ---- Header ---- */
 .site-header {
   position: sticky;
