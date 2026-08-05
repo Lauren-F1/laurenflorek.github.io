@@ -23,6 +23,7 @@ Lauren is not a developer. Explain everything in plain English, assume no coding
 3. No emoji, anywhere.
 4. Voice: warm, direct, honest, a little wry. Like a person, not a landing page.
 5. Avoid compressed parallel headline constructions (patterns like 'Four talks, one body of work' or 'Less noise, more truth'). They read as AI-written. Plain or working headlines instead.
+6. Contractions are the house style, but never contract a name with 's where it reads as possessive; write Lauren is, not Lauren's, in those spots.
 
 ## Design rules
 
