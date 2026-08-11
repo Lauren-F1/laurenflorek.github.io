@@ -233,6 +233,17 @@ a { color: var(--ink); }
 .form-error { font-size: 0.85rem; color: #7a2f2f; margin: 0; }
 .form-error a { color: inherit; }
 .form-thanks { font-size: 1.15rem; color: var(--ink); max-width: 34rem; margin-top: 1.9rem; }
+
+/* =========================================================
+   /lemonade/ pre-launch early-reader landing page:
+   one centered column, generous whitespace
+   ========================================================= */
+.lemonade { max-width: 40rem; margin-inline: auto; text-align: center; }
+.lemonade h1 { margin-bottom: 1.6rem; }
+.lemonade > p { max-width: 34rem; margin-inline: auto; }
+.lemonade .subhead { margin-top: 2.6rem; margin-bottom: 0.6rem; }
+.lemonade .kit-form { margin-inline: auto; text-align: left; }   /* form fields read better left aligned */
+.lemonade .fineprint { font-size: 0.78rem; color: #837a6e; margin-top: 1rem; }
 @media (max-width: 640px) {
   .inquiry-form .form-row { grid-template-columns: 1fr; }
 }
