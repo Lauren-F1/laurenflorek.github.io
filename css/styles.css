@@ -241,6 +241,7 @@ a { color: var(--ink); }
 .lemonade { max-width: 40rem; margin-inline: auto; text-align: center; }
 .lemonade h1 { margin-bottom: 1.6rem; }
 .lemonade > p { max-width: 34rem; margin-inline: auto; }
+.lemonade > p:not(.fineprint) { text-align: left; }   /* long body paragraphs read left aligned; headings stay centered */
 .lemonade .subhead { margin-top: 2.6rem; margin-bottom: 0.6rem; }
 .lemonade .kit-form { margin-inline: auto; text-align: left; }   /* form fields read better left aligned */
 .lemonade .fineprint { font-size: 0.78rem; color: #837a6e; margin-top: 1rem; }
