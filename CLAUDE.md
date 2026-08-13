@@ -51,7 +51,7 @@ Brand attributes: elevated, human, transformative, trusted, modern. These descri
 
 ## Content notes
 
-- Her book: Making Lemonade: A Bitter, Sweet, and Brutally Honest Guide to Surviving Heartbreak, publishing through Amazon KDP under her imprint, LemonPress. LemonPress is the publishing imprint; Lauren on Life is the personal brand and this website's name.
+- Her book: Making Lemonade: A Bitter, Sweet, and Brutally Honest Guide to Surviving Heartbreak, publishing through Amazon KDP under her imprint, LemonPress Books. LemonPress Books is the publishing imprint; Lauren on Life is the personal brand and this website's name.
 - Coaching background: founders, executives, business owners, and leadership teams. Heart-based coaching. Recurring themes: hard conversations, repair, worth, and leadership style.
 - She is building toward paid speaking and podcast appearances.
 - The two sites should feel visually related but clearly distinct in purpose, and cross-link sensibly.
