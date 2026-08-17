@@ -249,6 +249,40 @@ a { color: var(--ink); }
   .inquiry-form .form-row { grid-template-columns: 1fr; }
 }
 
+/* =========================================================
+   Payhip buy button (digital products).
+   The Payhip script turns any link with the class
+   payhip-buy-button into a checkout that opens over the page.
+   It also injects its own styling at load, so these rules use
+   !important to keep the button looking like the rest of the
+   site. The link still points at the Payhip product page, so
+   it works even if their script fails to load.
+   ========================================================= */
+a.payhip-buy-button {
+  display: inline-block !important;
+  font-family: var(--sans) !important;
+  font-weight: 700 !important;
+  font-size: 1rem !important;
+  line-height: 1.2 !important;
+  letter-spacing: 0.12em !important;
+  text-transform: uppercase !important;
+  text-decoration: none !important;
+  color: var(--citron) !important;
+  background: var(--ink) !important;
+  background-image: none !important;
+  padding: 1rem 2rem !important;
+  border: 1px solid var(--ink) !important;
+  border-radius: 2px !important;
+  box-shadow: none !important;
+  text-shadow: none !important;
+  cursor: pointer;
+}
+a.payhip-buy-button:hover { text-decoration: underline !important; text-underline-offset: 3px; }
+a.payhip-buy-button:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; }
+
+/* Small print under a button or form, site wide */
+.fineprint { font-size: 0.78rem; color: #837a6e; margin-top: 1rem; }
+
 /* Focus states you can actually see */
 a:focus-visible, .btn:focus-visible {
   outline: 2px solid var(--ink);
