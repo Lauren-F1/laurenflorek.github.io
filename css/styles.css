@@ -278,11 +278,12 @@ a.payhip-buy-button {
   cursor: pointer;
 }
 a.payhip-buy-button:hover { text-decoration: underline !important; text-underline-offset: 3px; }
-/* On an Ink section the button flips, the same way .btn does, so it stays visible */
+/* On an Ink section the button keeps its Ink fill and citron lettering, with a
+   Soft Blush border so its edges are visible against the dark background */
 .bg-ink a.payhip-buy-button {
-  background: var(--porcelain) !important;
-  color: var(--ink) !important;
-  border-color: var(--porcelain) !important;
+  background: var(--ink) !important;
+  color: var(--citron) !important;
+  border: 2px solid var(--blush) !important;
 }
 a.payhip-buy-button:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; }
 
