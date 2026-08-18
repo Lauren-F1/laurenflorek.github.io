@@ -318,6 +318,14 @@ a.payhip-buy-button:focus-visible { outline: 2px solid var(--ink); outline-offse
   .shop-item { grid-template-columns: 1fr; }
   .shop-item .shop-cover { max-width: 210px; }
 }
+/* On the Soft Stone shop background, the quieter text has to darken to stay
+   readable, and the rules between products need a little more weight. */
+.bg-stone .eyebrow { color: var(--ink); }
+.bg-stone .shop-price { color: #3a3833; }
+.bg-stone .fineprint { color: #3a3833; }
+.bg-stone .shop-item { border-top-color: rgba(41, 40, 38, 0.3); }
+.bg-stone .shop-item:last-child { border-bottom-color: rgba(41, 40, 38, 0.3); }
+.bg-stone .shop-item .shop-cover { border-color: rgba(41, 40, 38, 0.28); }
 
 /* Small print under a button or form, site wide */
 .fineprint { font-size: 0.78rem; color: #837a6e; margin-top: 1rem; }
