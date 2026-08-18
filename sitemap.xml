@@ -31,6 +31,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://laurenonlife.com/30-days</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://laurenonlife.com/hope-or-evidence</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
