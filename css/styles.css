@@ -302,15 +302,10 @@ a.payhip-buy-button:focus-visible { outline: 2px solid var(--ink); outline-offse
   border-top: 1px solid rgba(41, 40, 38, 0.16);
 }
 .shop-item:last-child { border-bottom: 1px solid rgba(41, 40, 38, 0.16); }
-/* Every cover sits on a Soft Blush mat, like a framed print. A pale cover
-   would otherwise disappear into a pale page, and this works whatever colour
-   a future product's cover turns out to be. */
-.shop-item .shop-cover {
-  background: var(--blush);
-  padding: clamp(0.8rem, 2vw, 1.1rem);
-  border: 1px solid rgba(41, 40, 38, 0.14);
-}
-.shop-item .shop-cover img { border: 1px solid rgba(41, 40, 38, 0.14); }
+/* A thin frame around each cover, the same one the book pages use. No mat
+   behind it: a pale cover on a pale page is fine as long as its edge is
+   drawn. */
+.shop-item .shop-cover { border: 1px solid rgba(41, 40, 38, 0.16); }
 .shop-item h3 { margin-bottom: 0.4rem; }
 .shop-item p { max-width: 34rem; }
 .shop-price {
