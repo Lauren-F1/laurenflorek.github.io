@@ -317,6 +317,21 @@ a.payhip-buy-button:focus-visible { outline: 2px solid var(--ink); outline-offse
   margin: 0 0 0.5rem;
 }
 .shop-item .actions { margin-top: 1.4rem; }
+
+/* The "I Want It All" bundle, featured above the individual products */
+.bundle {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr;
+  gap: clamp(1.5rem, 4vw, 3rem);
+  align-items: center;
+  border: 1px solid var(--ink);
+  padding: clamp(1.75rem, 4vw, 2.75rem);
+  margin-top: clamp(1.5rem, 4vw, 2.5rem);
+}
+.bundle h2 { line-height: 1.1; margin: 0; }
+.bundle-price { font-family: var(--serif); font-size: clamp(2.2rem, 4vw, 2.8rem); line-height: 1; margin: 0; }
+.bundle-price .was { font-family: var(--sans); font-size: 1.05rem; color: var(--stone); text-decoration: line-through; letter-spacing: 0; margin-right: 0.6rem; vertical-align: middle; }
+@media (max-width: 640px) { .bundle { grid-template-columns: 1fr; } }
 @media (max-width: 640px) {
   .shop-item { grid-template-columns: 1fr; }
   .shop-item .shop-cover { max-width: 210px; }
