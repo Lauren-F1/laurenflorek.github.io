@@ -640,7 +640,7 @@ a:focus-visible, .btn:focus-visible {
 .site-header.is-scrolled .brand { font-size: 1.18rem; }
 
 /* Oversized hero */
-.hero-xl { padding-block: clamp(3.25rem, 10vw, 8rem); }
+.hero-xl { padding-block: clamp(1.75rem, 4vw, 3.5rem); }
 .hero-xl .eyebrow { margin-bottom: 1.5rem; }
 .hero-title {
   font-family: var(--serif);
@@ -662,8 +662,8 @@ a:focus-visible, .btn:focus-visible {
 /* Slow horizontal ticker */
 .ticker {
   overflow: hidden;
-  border-top: 1px solid rgba(41, 40, 38, 0.14);
-  border-bottom: 1px solid rgba(41, 40, 38, 0.14);
+  border-top: 3px solid var(--citron);
+  border-bottom: 3px solid var(--citron);
   padding-block: 0.95rem;
   background: var(--porcelain);
 }
@@ -686,7 +686,7 @@ a:focus-visible, .btn:focus-visible {
 @keyframes ticker-scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
 
 /* Image-led rows */
-.row { padding-block: clamp(3rem, 7vw, 6rem); }
+.row { padding-block: clamp(2rem, 4.5vw, 3.75rem); }
 .row-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -730,7 +730,7 @@ a:focus-visible, .btn:focus-visible {
 }
 
 /* Bold, light closing invitation */
-.closing { padding-block: clamp(4rem, 10vw, 8rem); text-align: center; }
+.closing { padding-block: clamp(3rem, 6vw, 5rem); text-align: center; }
 .closing h2 {
   font-family: var(--serif);
   font-weight: 500;
