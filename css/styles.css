@@ -838,11 +838,26 @@ h2 { font-size: clamp(2rem, 3.8vw, 3rem); }
 }
 
 
-/* Charcoal About section (home): photo and both buttons in the left column, photo top level with the first line of text */
-.about-row .row-grid { align-items: start; }
-.about-row .row-media { max-width: none; }
-.about-row .actions { flex-wrap: nowrap; gap: 0.8rem; margin-top: 1.4rem; }
-.about-row .actions { width: 100%; }
+/* Charcoal About section (home): wider columns; the label sits in its own row so the photo top lines up with "Hi, I'm Lauren Florek" */
+.about-row > .wrap { max-width: 1320px; }
+.about-row .row-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "head" "media" "body";
+  align-items: start;
+  column-gap: clamp(2rem, 5vw, 4rem);
+  row-gap: 0;
+}
+.about-head { grid-area: head; }
+.about-row .row-media { grid-area: media; max-width: none; }
+.about-row .about-body { grid-area: body; max-width: none; }
+.about-row .about-head .rule { margin-bottom: 1.4rem; }
+.about-row .actions { width: 100%; flex-wrap: nowrap; gap: 0.8rem; margin-top: 2.4rem; }
 .about-row .actions .btn { flex: 1 1 0; min-width: 0; text-align: center; padding: 0.95rem 0.6rem; font-size: 0.72rem; letter-spacing: 0.1em; white-space: nowrap; }
-@media (min-width: 861px) { .about-row .row-grid { grid-template-columns: 1.1fr 1fr; } }
+/* Ivory (Warm Paper) buttons on the charcoal background */
+.about-row .btn { background: var(--paper); color: var(--ink); border-color: var(--paper); }
+.about-row .btn-outline { background: transparent; color: var(--paper); border-color: var(--paper); }
+@media (min-width: 861px) {
+  .about-row .row-grid { grid-template-columns: 1.1fr 1fr; grid-template-areas: ". head" "media body"; }
+}
 @media (max-width: 400px) { .about-row .actions { flex-wrap: wrap; } .about-row .actions .btn { flex: 1 1 100%; } }
