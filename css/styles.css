@@ -901,3 +901,7 @@ h2 { font-size: clamp(2rem, 3.8vw, 3rem); }
 /* Hero subline: one line on wider screens, with more space between it and the headline */
 .hero-xl .hero-sub { max-width: none; margin-top: clamp(2rem, 4.5vw, 3.5rem); line-height: 1.5; }
 @media (min-width: 640px) { .hero-xl .hero-sub { white-space: nowrap; } }
+
+/* Home pull quote: wider margins so the quote fills more of the page */
+.pull-quote-section .quote-beside { max-width: 78rem; margin-inline: 0; }
+.pull-quote-section .quote-beside { font-size: clamp(1.7rem, 3.2vw, 2.7rem); }
