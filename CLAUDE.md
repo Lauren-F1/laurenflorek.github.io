@@ -44,8 +44,8 @@ Colors:
 
 Type:
 
-- Headlines: Cormorant Garamond from Google Fonts at Light 300 (400 for h3) (long, thin, soft, in the spirit of Marie Forleo's site; chosen by Lauren in September 2026 after Bodoni Moda proved too hard on the eyes). It stands in for Prism Display, the true brand font, which is not available free.
-- Italic accent: Cormorant Garamond italic, used for the pull quote, the scrolling ticker, and subtitles as a softer second voice next to the headlines.
+- Headlines: Newsreader from Google Fonts at Light 300 (400 for h3), chosen by Lauren in September 2026 as the closest free match to Marie Forleo's headline style. It stands in for Prism Display, the true brand font, which is not available free.
+- Italic accent: Newsreader Light italic, used for the pull quote, the scrolling ticker, and subtitles as a softer second voice next to the headlines.
 - Body: DM Sans (replaced Montserrat in September 2026), 400 and 500 weights
 
 Brand attributes: elevated, human, transformative, trusted, modern. These describe how the site should feel. Two of these words (elevate, transformative) are on the banned list above, so never let them appear in visible copy.
