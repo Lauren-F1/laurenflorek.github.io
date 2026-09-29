@@ -893,3 +893,7 @@ h2 { font-size: clamp(2rem, 3.8vw, 3rem); }
 /* Hero accent: "I teach both." in a light italic of the same serif, with a touch more presence */
 .hero-accent { font-style: italic; font-weight: 300; letter-spacing: 0.005em; }
 @media (max-width: 899px) { .hero-accent { display: block; } }
+
+/* Book page: nudge the About text column in from the left edge, using more of the space on the right */
+.book-about { margin-left: clamp(1.5rem, 9vw, 8rem); margin-right: auto; }
+@media (max-width: 640px) { .book-about { margin-left: auto; } }
