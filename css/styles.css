@@ -747,3 +747,24 @@ a:focus-visible, .btn:focus-visible {
   .js .reveal { opacity: 1; transform: none; transition: none; }
   .ticker-track { animation: none; }
 }
+
+/* Quote shown beside a portrait (home page) */
+.quote-beside {
+  font-family: var(--serif);
+  font-style: italic;
+  font-weight: 400;
+  font-size: clamp(1.4rem, 2.6vw, 2.1rem);
+  line-height: 1.32;
+  margin: 0;
+  color: var(--ink);
+}
+.quote-cite {
+  display: block;
+  margin-top: 1.2rem;
+  font-family: var(--sans);
+  font-style: normal;
+  font-size: 0.78rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--stone);
+}
