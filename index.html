@@ -39,6 +39,7 @@
     ]
   }
   </script>
+  <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
 
@@ -54,28 +55,48 @@
     </div>
   </header>
 
-  <!-- HERO -->
-  <section class="section-lg">
-    <div class="wrap duo">
-      <div class="col-text">
-        <p class="eyebrow">Lauren Florek</p>
-        <h1>Repair is a skill. Worth is a practice. I teach both.</h1>
-        <p style="margin-top:1.4rem; color:#4b463f;">Author, speaker, and leadership coach.</p>
-        <div class="actions">
-          <a class="btn" href="book.html">Read about the book</a>
-          <a class="btn btn-outline" href="speaker.html">Book Lauren to speak</a>
-        </div>
-      </div>
-      <div class="col-media">
-        <img src="images/lauren-home.jpg?v=2" alt="Lauren Florek smiling, a black and white portrait against a warm light background." style="border:1px solid rgba(41,40,38,0.08);">
+  <!-- HERO: oversized headline, lots of space -->
+  <section class="hero-xl reveal">
+    <div class="wrap">
+      <p class="eyebrow">Lauren Florek</p>
+      <h1 class="hero-title">Repair is a skill. Worth is a practice. I teach both.</h1>
+      <p class="hero-sub">Author, speaker, and leadership coach.</p>
+      <div class="actions">
+        <a class="btn" href="book.html">Read about the book</a>
+        <a class="btn btn-outline" href="speaker.html">Book Lauren to speak</a>
       </div>
     </div>
   </section>
 
-  <!-- GETTING TO KNOW LAUREN -->
-  <section class="section bg-porcelain">
-    <div class="wrap margin-rule" style="max-width:48rem;">
-      <div class="col-text">
+  <!-- TICKER: real talk titles and themes only. Decorative, so hidden from screen readers. -->
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker-track">
+      <span class="ticker-item">Making Lemonade</span><span class="ticker-sep">/</span>
+      <span class="ticker-item">Under the Right Conditions</span><span class="ticker-sep">/</span>
+      <span class="ticker-item">Devastated Attractively</span><span class="ticker-sep">/</span>
+      <span class="ticker-item">Human Before High-Performing</span><span class="ticker-sep">/</span>
+      <span class="ticker-item">hard conversations</span><span class="ticker-sep">/</span>
+      <span class="ticker-item">repair</span><span class="ticker-sep">/</span>
+      <span class="ticker-item">worth</span><span class="ticker-sep">/</span>
+      <span class="ticker-item">self-trust</span><span class="ticker-sep">/</span>
+      <span class="ticker-item">Making Lemonade</span><span class="ticker-sep">/</span>
+      <span class="ticker-item">Under the Right Conditions</span><span class="ticker-sep">/</span>
+      <span class="ticker-item">Devastated Attractively</span><span class="ticker-sep">/</span>
+      <span class="ticker-item">Human Before High-Performing</span><span class="ticker-sep">/</span>
+      <span class="ticker-item">hard conversations</span><span class="ticker-sep">/</span>
+      <span class="ticker-item">repair</span><span class="ticker-sep">/</span>
+      <span class="ticker-item">worth</span><span class="ticker-sep">/</span>
+      <span class="ticker-item">self-trust</span><span class="ticker-sep">/</span>
+    </div>
+  </div>
+
+  <!-- GETTING TO KNOW LAUREN: image left, text right -->
+  <section class="row reveal">
+    <div class="wrap row-grid">
+      <div class="row-media">
+        <img src="images/lauren-home.jpg?v=2" alt="Lauren Florek smiling, a black and white portrait against a warm light background.">
+      </div>
+      <div class="row-text">
         <p class="eyebrow">Getting to know Lauren</p>
         <hr class="rule">
         <p>Hi, I'm Lauren Florek, founder of New Mindset Foundation, a human development company focused on the deeper work of becoming more conscious, emotionally honest, and internally aligned.</p>
@@ -86,11 +107,11 @@
   </section>
 
   <!-- THE WORK -->
-  <section class="section">
+  <section class="section bg-porcelain reveal">
     <div class="wrap">
       <p class="eyebrow">The work</p>
-      <h2 style="max-width:20rem;">Three places we might begin.</h2>
-      <div class="entries entries--porcelain">
+      <h2 style="max-width:22rem;">Three places we might begin.</h2>
+      <div class="entries entries--airy">
         <div class="entry">
           <p class="label">On becoming</p>
           <div>
@@ -113,31 +134,21 @@
     </div>
   </section>
 
-  <!-- QUOTE + COACHING (two panels side by side, stack on narrow with quote first) -->
-  <section class="duo-panels">
-    <div class="panel panel-quote">
-      <hr class="rule">
-      <p class="quote-lead">To live fully is to never stop evolving. To love with more truth. To lead with more care. To choose with more courage. To meet your life with both honesty and responsibility. Again and again, this is the invitation.</p>
-      <p class="quote-name">Lauren Florek</p>
-    </div>
-    <div class="panel panel-coach">
-      <p class="eyebrow">Coaching</p>
-      <h2 style="max-width:24rem;">Ready to do the deeper work?</h2>
-      <p style="margin-top:1rem;">To be considered for private or group coaching, reach out and tell me where you are and what you are moving toward.</p>
-      <div class="actions">
-        <a class="btn" href="mailto:info@newmindsetfoundation.com?subject=Coaching%20inquiry">Inquire about coaching</a>
-      </div>
-      <hr class="rule" style="width:34px; margin-top:2rem;">
+  <!-- PULL QUOTE: Lauren's own words, large -->
+  <section class="pull-xl bg-blush reveal">
+    <div class="wrap">
+      <blockquote>To live fully is to never stop evolving. To love with more truth. To lead with more care. To choose with more courage. To meet your life with both honesty and responsibility. Again and again, this is the invitation.</blockquote>
+      <cite>Lauren Florek</cite>
     </div>
   </section>
 
-  <!-- THE BOOK (cover sits on Porcelain, not blush, so the blush cover stands out) -->
-  <section class="section bg-porcelain">
-    <div class="wrap book">
-      <div class="book-cover">
+  <!-- BOOK: image right, text left -->
+  <section class="row bg-porcelain reveal">
+    <div class="wrap row-grid row-reverse">
+      <div class="row-media">
         <img src="images/making-lemonade-cover.png?v=2" alt="Cover of Making Lemonade by Lauren Florek. A watercolor lemon slice on a soft blush background.">
       </div>
-      <div>
+      <div class="row-text">
         <p class="kicker">The book, out September 23, 2026</p>
         <h2>Making Lemonade</h2>
         <p class="subtitle">A bitter, sweet, and brutally honest guide to heartbreak, divorce, and starting over.</p>
@@ -149,10 +160,48 @@
     </div>
   </section>
 
-  <!-- THE SHOP. One mention on the home page, not one block per product, so
-       this page stays about Lauren. The book page carries the two products
-       that belong to the book. -->
-  <section class="section">
+  <!-- SPEAKING: image left, text right -->
+  <section class="row reveal">
+    <div class="wrap row-grid">
+      <div class="row-media">
+        <img src="images/lauren-speaker.jpg?v=2" alt="Lauren Florek at a cafe by a window, resting her chin on her hand and smiling softly.">
+      </div>
+      <div class="row-text">
+        <p class="eyebrow">Speaking</p>
+        <h2>Talks for the moments that change us.</h2>
+        <p>Lauren Florek brings humor, psychological insight, and candid storytelling to the experiences that shape who we become.</p>
+        <div class="actions">
+          <a class="btn" href="speaker.html">See speaking</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COACHING: image right, text left -->
+  <section class="row bg-porcelain reveal">
+    <div class="wrap row-grid row-reverse">
+      <div class="row-media">
+        <img src="images/lauren-book.jpg?v=2" alt="Lauren Florek seated in front of a full bookshelf, a black and white portrait.">
+      </div>
+      <div class="row-text">
+        <p class="eyebrow">Coaching</p>
+        <h2>Ready to do the deeper work?</h2>
+        <p>To be considered for private or group coaching, reach out and tell me where you are and what you are moving toward.</p>
+        <div class="actions">
+          <a class="btn" href="mailto:info@newmindsetfoundation.com?subject=Coaching%20inquiry">Inquire about coaching</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS: placeholder only, not shown. No real testimonials exist yet.
+       When Lauren sends 2 or 3 real quotes with names (reader reviews of Making
+       Lemonade, or a client or event organizer), build them here in the style of a
+       short bold result line on top and the quote below, in large type. Never invent
+       quotes, names, numbers, or stats. -->
+
+  <!-- SHOP -->
+  <section class="section reveal">
     <div class="wrap" style="max-width:44rem;">
       <p class="eyebrow">Workbooks and kits</p>
       <hr class="rule">
@@ -164,8 +213,8 @@
     </div>
   </section>
 
-  <!-- THE FREE GUIDE (the printed book's back matter sends readers to /lemonade) -->
-  <section class="section bg-blush">
+  <!-- FREE GUIDE -->
+  <section class="section bg-blush reveal">
     <div class="wrap" style="max-width:44rem;">
       <p class="eyebrow">Free printable</p>
       <hr class="rule">
@@ -173,6 +222,17 @@
       <p style="margin-top:1rem;">All ten principles from the book in one printable guide, plus a short note from me for the days when heartbreak has other plans. There's a page at the back to tear off and put on the fridge.</p>
       <div class="actions">
         <a class="btn" href="lemonade/">Get the free guide</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CLOSING INVITATION -->
+  <section class="closing bg-porcelain reveal">
+    <div class="wrap">
+      <h2>Let's talk.</h2>
+      <p style="max-width:34rem; margin:0 auto 2rem; color:#4b463f;">Whether it's a stage, a team, or the deeper work one on one, tell me what you're carrying and what you want to change.</p>
+      <div class="actions" style="justify-content:center;">
+        <a class="btn" href="speaker.html#booking">Start a conversation</a>
       </div>
     </div>
   </section>
@@ -202,6 +262,34 @@
       </div>
     </div>
   </footer>
+
+  <!-- Quiet motion: header shrink on scroll, and gentle fade-and-rise as sections
+       enter view. Off entirely for visitors who prefer reduced motion. -->
+  <script>
+    (function () {
+      var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      var header = document.querySelector('.site-header');
+      if (header) {
+        var onScroll = function () {
+          if (window.scrollY > 12) { header.classList.add('is-scrolled'); }
+          else { header.classList.remove('is-scrolled'); }
+        };
+        onScroll();
+        window.addEventListener('scroll', onScroll, { passive: true });
+      }
+      var items = document.querySelectorAll('.reveal');
+      if (reduce || !('IntersectionObserver' in window)) {
+        items.forEach(function (el) { el.classList.add('is-visible'); });
+        return;
+      }
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (e.isIntersecting) { e.target.classList.add('is-visible'); io.unobserve(e.target); }
+        });
+      }, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 });
+      items.forEach(function (el) { io.observe(el); });
+    })();
+  </script>
 
 </body>
 </html>
