@@ -44,7 +44,7 @@ Colors:
 
 Type:
 
-- Headlines: Playfair Display from Google Fonts (standing in for Prism Display, the true brand font, which is not available free)
+- Headlines: Instrument Serif from Google Fonts, used at its single 400 weight (Lauren chose it in September 2026 over Playfair Display for a more modern, editorial look; it stands in for Prism Display, the true brand font, which is not available free). Never set serif headings bolder than 400, there is no bold cut and browsers would fake it.
 - Body: Montserrat
 
 Brand attributes: elevated, human, transformative, trusted, modern. These describe how the site should feel. Two of these words (elevate, transformative) are on the banned list above, so never let them appear in visible copy.
