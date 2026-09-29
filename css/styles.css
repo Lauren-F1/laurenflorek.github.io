@@ -822,3 +822,17 @@ h2 { font-size: clamp(2rem, 3.8vw, 3rem); }
 }
 /* Keep the italic accents at the same Light weight as the headlines so they read as one family */
 .quote-beside, .ticker-item, .subtitle, .ksub { font-weight: 300; }
+
+/* Ticker separators: small citron circles instead of slashes */
+.ticker-sep {
+  display: inline-block;
+  width: 0.55rem;
+  height: 0.55rem;
+  border-radius: 50%;
+  background: var(--citron);
+  font-size: 0;
+  line-height: 0;
+  color: transparent;
+  vertical-align: middle;
+  margin: 0 0.4rem;
+}
