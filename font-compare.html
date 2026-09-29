@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex">
+  <title>Font comparison (private)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;1,300&family=Newsreader:ital,opsz,wght@0,6..72,300;1,6..72,300&family=Fraunces:ital,opsz,wght@0,9..144,300;1,9..144,300&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root { --ink:#292826; --paper:#F4EFE7; --citron:#E5F21A; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:"DM Sans",sans-serif; padding:clamp(1.5rem,5vw,4rem); }
+    .opt { padding-block:clamp(2rem,5vw,3.5rem); border-top:1px solid rgba(41,40,38,.16); max-width:62rem; }
+    .opt:first-of-type { border-top:0; }
+    .label { font-size:.78rem; font-weight:500; letter-spacing:.2em; text-transform:uppercase; color:#7d7469; margin:0 0 .4rem; }
+    .dash { width:46px; height:3px; background:var(--citron); border:0; margin:0 0 1.2rem; }
+    h1 { font-weight:300; font-size:clamp(2.6rem,8vw,5.6rem); line-height:1.03; margin:0; max-width:17ch; }
+    .sub { color:#4b463f; margin:1rem 0 0; }
+    .q { font-style:italic; font-weight:300; font-size:clamp(1.3rem,3vw,2rem); margin:1.2rem 0 0; max-width:30ch; }
+    .a h1,.a .q { font-family:"Cormorant Garamond",Georgia,serif; }
+    .a h1 { font-size:clamp(3rem,9vw,6.4rem); }
+    .b h1,.b .q { font-family:"Newsreader",Georgia,serif; }
+    .c h1,.c .q { font-family:"Fraunces",Georgia,serif; }
+  </style>
+</head>
+<body>
+  <section class="opt a"><p class="label">A: Cormorant Garamond Light (live now)</p><hr class="dash"><h1>Repair is a skill. Worth is a practice. I teach both.</h1><p class="sub">Author, speaker, and leadership coach.</p><p class="q">To live fully is to never stop evolving.</p></section>
+  <section class="opt b"><p class="label">B: Newsreader Light</p><hr class="dash"><h1>Repair is a skill. Worth is a practice. I teach both.</h1><p class="sub">Author, speaker, and leadership coach.</p><p class="q">To live fully is to never stop evolving.</p></section>
+  <section class="opt c"><p class="label">C: Fraunces Light</p><hr class="dash"><h1>Repair is a skill. Worth is a practice. I teach both.</h1><p class="sub">Author, speaker, and leadership coach.</p><p class="q">To live fully is to never stop evolving.</p></section>
+</body>
+</html>
