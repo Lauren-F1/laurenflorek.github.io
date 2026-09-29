@@ -905,3 +905,11 @@ h2 { font-size: clamp(2rem, 3.8vw, 3rem); }
 /* Home pull quote: wider margins so the quote fills more of the page */
 .pull-quote-section .quote-beside { max-width: 78rem; margin-inline: 0; }
 .pull-quote-section .quote-beside { font-size: clamp(1.7rem, 3.2vw, 2.7rem); }
+
+/* Free guide card and "Let's talk" card, side by side on wide screens. Each keeps its own background and content. */
+.side-by-side { display: grid; grid-template-columns: 1fr 1fr; }
+.side-by-side > section { display: flex; flex-direction: column; justify-content: center; }
+.side-by-side .wrap { max-width: none; width: 100%; margin: 0; padding-inline: clamp(1.5rem, 5vw, 5rem); }
+.side-by-side .closing .wrap { text-align: center; }
+.side-by-side .closing h2 { font-size: clamp(2.4rem, 4.6vw, 3.8rem); }
+@media (max-width: 860px) { .side-by-side { grid-template-columns: 1fr; } }
