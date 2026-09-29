@@ -44,8 +44,9 @@ Colors:
 
 Type:
 
-- Headlines: Instrument Serif from Google Fonts, used at its single 400 weight (Lauren chose it in September 2026 over Playfair Display for a more modern, editorial look; it stands in for Prism Display, the true brand font, which is not available free). Never set serif headings bolder than 400, there is no bold cut and browsers would fake it.
-- Body: Montserrat
+- Headlines: Bodoni Moda from Google Fonts at 400 (long, thin, high contrast, in the spirit of Marie Forleo's site; chosen by Lauren in September 2026). It stands in for Prism Display, the true brand font, which is not available free.
+- Italic accent: Cormorant Garamond italic, used for the pull quote, the scrolling ticker, and subtitles as a softer second voice next to the Bodoni headlines.
+- Body: DM Sans (replaced Montserrat in September 2026), 400 and 500 weights
 
 Brand attributes: elevated, human, transformative, trusted, modern. These describe how the site should feel. Two of these words (elevate, transformative) are on the banned list above, so never let them appear in visible copy.
 

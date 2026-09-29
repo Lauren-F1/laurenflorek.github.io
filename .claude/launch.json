@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "lemonpress",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev", "--prefix", "/Users/laurenflorek/Projects/lemonpress"],
+      "port": 3000
+    }
+  ]
+}
