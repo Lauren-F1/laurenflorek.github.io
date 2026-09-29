@@ -836,3 +836,10 @@ h2 { font-size: clamp(2rem, 3.8vw, 3rem); }
   vertical-align: middle;
   margin: 0 0.4rem;
 }
+
+/* Charcoal About section (home): on wide screens the photo grows to match the height of the text beside it */
+@media (min-width: 861px) {
+  .about-row .row-grid { align-items: stretch; }
+  .about-row .row-media { display: flex; }
+  .about-row .row-media img { height: 100%; object-fit: cover; object-position: 50% 25%; }
+}
