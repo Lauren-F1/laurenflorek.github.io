@@ -702,9 +702,14 @@ a:focus-visible, .btn:focus-visible {
   .row-media { max-width: 420px; }
 }
 
-/* The Work, calmer: open rows instead of filled cards (home only) */
-.entries--airy .entry { background: transparent; box-shadow: none; padding-block: clamp(1.6rem, 4vw, 2.4rem); }
+/* The Work (home only): tighter, colored boxes, larger labels */
+.entries--airy { display: flex; flex-direction: column; gap: clamp(0.7rem, 2vw, 1.05rem); margin-top: clamp(1rem, 2.5vw, 1.5rem); }
+.entries--airy .entry { border: 0; border-radius: 2px; padding: clamp(1.3rem, 3.2vw, 2rem); background: var(--porcelain); box-shadow: none; }
 .entries--airy .entry:hover { transform: none; }
+.entries--airy .entry:nth-child(1) { background: var(--porcelain); border-left: 5px solid var(--citron); }
+.entries--airy .entry:nth-child(2) { background: var(--blush); }
+.entries--airy .entry:nth-child(3) { background: var(--porcelain); }
+.entries--airy .label { font-size: clamp(0.95rem, 1.6vw, 1.15rem); letter-spacing: 0.12em; color: var(--ink); }
 
 /* Large centered pull quote */
 .pull-xl { padding-block: clamp(3.5rem, 8vw, 7rem); text-align: center; }
