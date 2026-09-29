@@ -888,4 +888,4 @@ h2 { font-size: clamp(2rem, 3.8vw, 3rem); }
 .ticker-track { animation-duration: 60s; animation-timing-function: linear; }
 
 /* Book page, About the book: a wider text column so there is less empty space at the sides */
-.book-about p { max-width: 50rem; }
+.book-about p { max-width: 64rem; }
