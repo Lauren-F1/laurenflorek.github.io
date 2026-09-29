@@ -897,3 +897,7 @@ h2 { font-size: clamp(2rem, 3.8vw, 3rem); }
 /* Book page: nudge the About text column in from the left edge, using more of the space on the right */
 .book-about { margin-left: clamp(1.5rem, 9vw, 8rem); margin-right: auto; }
 @media (max-width: 640px) { .book-about { margin-left: auto; } }
+
+/* Hero subline: one line on wider screens, with more space between it and the headline */
+.hero-xl .hero-sub { max-width: none; margin-top: clamp(2rem, 4.5vw, 3.5rem); line-height: 1.5; }
+@media (min-width: 640px) { .hero-xl .hero-sub { white-space: nowrap; } }
