@@ -837,9 +837,11 @@ h2 { font-size: clamp(2rem, 3.8vw, 3rem); }
   margin: 0 0.4rem;
 }
 
-/* Charcoal About section (home): on wide screens the photo grows to match the height of the text beside it */
-@media (min-width: 861px) {
-  .about-row .row-grid { align-items: stretch; }
-  .about-row .row-media { display: flex; }
-  .about-row .row-media img { height: 100%; object-fit: cover; object-position: 50% 25%; }
-}
+
+/* Charcoal About section (home): photo and both buttons in the left column, photo top level with the first line of text */
+.about-row .row-grid { align-items: start; }
+.about-row .row-media { max-width: none; }
+.about-row .actions { flex-wrap: nowrap; gap: 0.8rem; margin-top: 1.4rem; }
+.about-row .actions .btn { padding-inline: 1.2rem; white-space: nowrap; }
+@media (min-width: 861px) { .about-row .row-grid { grid-template-columns: 1.1fr 1fr; } }
+@media (max-width: 520px) { .about-row .actions { flex-wrap: wrap; } }
