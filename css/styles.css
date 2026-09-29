@@ -861,3 +861,28 @@ h2 { font-size: clamp(2rem, 3.8vw, 3rem); }
   .about-row .row-grid { grid-template-columns: 1.1fr 1fr; grid-template-areas: ". head" "media body"; }
 }
 @media (max-width: 400px) { .about-row .actions { flex-wrap: wrap; } .about-row .actions .btn { flex: 1 1 100%; } }
+
+/* Ticker: refined editorial look. Upright light serif, generous spacing, thin Soft Stone dividers, slow smooth drift */
+.ticker-item {
+  font-family: var(--serif);
+  font-style: normal;
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: 0.03em;
+  font-size: clamp(1.25rem, 2.4vw, 1.75rem);
+  color: var(--ink);
+  padding: 0;
+}
+.ticker-sep {
+  display: inline-block;
+  width: 1px;
+  height: 1.15em;
+  margin: 0 clamp(1.6rem, 3.5vw, 3rem);
+  border-radius: 0;
+  background: var(--stone);
+  vertical-align: middle;
+  font-size: 1.4rem;
+  line-height: 1;
+}
+.ticker { padding-block: 1.15rem; }
+.ticker-track { animation-duration: 60s; animation-timing-function: linear; }
