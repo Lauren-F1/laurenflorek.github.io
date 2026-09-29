@@ -682,7 +682,7 @@ a:focus-visible, .btn:focus-visible {
   color: var(--ink);
   padding: 0 1.4rem;
 }
-.ticker-sep { color: var(--citron); }
+.ticker-sep { color: var(--citron); font-weight: 700; }
 @keyframes ticker-scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
 
 /* Image-led rows */
